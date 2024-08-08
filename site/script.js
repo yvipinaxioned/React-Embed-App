@@ -1,6 +1,6 @@
 (function() {
   // Ensure the global configuration variables are set
-  var config = window.KIONI_APP_CONFIG || {};
+  var config = window.MY_EMBED_APP_APP_CONFIG || {};
 
   // Create a link element for the CSS
   var link = document.createElement('link');
@@ -9,10 +9,10 @@
   document.head.appendChild(link);
 
   // Ensure the root element exists
-  var rootElement = document.getElementById('kioni-react-root');
+  var rootElement = document.getElementById('my-embed-app-react-root');
   if (!rootElement) {
     rootElement = document.createElement('div');
-    rootElement.id = 'kioni-react-root';
+    rootElement.id = 'my-embed-app-react-root';
     document.body.appendChild(rootElement);
   }
 
