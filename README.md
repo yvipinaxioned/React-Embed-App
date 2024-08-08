@@ -20,14 +20,16 @@ yarn start
 yarn build
 ```
 
-## Run the app in production mode
+## Serve the app in production mode
 
 ```bash
 # Run the app in production mode on port 3000
 serve -s build -l 3000
 ```
 
-## Run the client app in `/site` folder
+## Serve the client app in `/site` folder
+
+> Note: Make sure the production build is already created and running before serving the client app.
 
 ```bash
 # Run the client app in the `/site` folder on port 4000
