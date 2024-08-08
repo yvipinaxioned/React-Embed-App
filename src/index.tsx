@@ -22,3 +22,18 @@ if (rootElement) {
 
 // Report web vitals (optional)
 reportWebVitals();
+
+/*
+export function initializeApp(config: any, rootElement: HTMLElement) {
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(
+    <React.StrictMode>
+      <App config={config} />
+    </React.StrictMode>
+  );
+
+  // Report web vitals (optional)
+  reportWebVitals();
+}
+
+*/
