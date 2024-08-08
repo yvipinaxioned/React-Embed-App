@@ -16,7 +16,4 @@
   script.setAttribute('src', `${config.domain}/static/js/main.js`);
   rootElement.appendChild(script);
 
-  const reactDiv = document.createElement('div');
-  rootElement.appendChild(reactDiv);
-
 })();

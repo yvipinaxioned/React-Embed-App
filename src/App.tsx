@@ -9,9 +9,9 @@ interface AppProps {
 }
 
 const App: React.FC<AppProps> = ({ config }) => {
-  // get sku from the dom id sku
+  // get sku from the parent DOM
   const sku = document.getElementById('sku')?.textContent;
-  console.log(sku);
+  
   return (
     <div className="bg-gray-100">
       <div className="container mx-auto p-4 bg-white shadow-lg rounded">
