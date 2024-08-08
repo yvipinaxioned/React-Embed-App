@@ -10,11 +10,11 @@ interface AppProps {
 
 const App: React.FC<AppProps> = ({ config }) => {
   return (
-    <div className="App">
-      <div>
-        <h1>Hello, Embedded App!</h1>
-        <p>Client ID: {config.clientId}</p>
-        <p>Token: {config.token}</p>
+    <div className="bg-gray-100">
+      <div className="container mx-auto p-4 bg-white shadow-lg rounded">
+        <h1 className="text-2xl font-bold mb-4">Hello, Embedded App!</h1>
+        <p className="text-lg mb-2">Client ID: {config.clientId}</p>
+        <p className="text-lg mb-4">Token: {config.token}</p>
         <Chatbot />
       </div>
     </div>
