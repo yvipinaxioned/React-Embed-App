@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 // Read the configuration from the global variable
 // @ts-ignore
-const config = window.MY_EMBED_APP_APP_CONFIG || {};
+const config = window.MY_EMBED_APP_CONFIG || {};
 
 // Initialize the root element
 const rootElement = document.getElementById('my-embed-app-react-root');

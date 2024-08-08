@@ -41,7 +41,7 @@ Use this file to add any additional configuration for the embedded app.
 
 ```html
 <script>
-  window.MY_EMBED_APP_APP_CONFIG = {
+  window.MY_EMBED_APP_CONFIG = {
     // Note: URL of the embedded app is required
     domain: 'http://localhost:3000', 
 

@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Client Website</title>
 
-  <!-- client setting the MY_EMBED_APP_APP_CONFIG -->
+  <!-- client setting the MY_EMBED_APP_CONFIG -->
   <script>
-    window.MY_EMBED_APP_APP_CONFIG = {
+    window.MY_EMBED_APP_CONFIG = {
       clientId: '1234',
       token: '5678',
       domain: 'http://localhost:3000',
@@ -18,10 +18,24 @@
   <!-- Load the MY_EMBED_APP app script.js file -->
   <script defer src="script.js"></script>
 
+
+  <style>
+    body{
+      padding: 10px;
+    }
+    h1 {
+      color: red;
+      padding: 10px;
+      margin-bottom: 24px;
+      border: 1px solid #333;
+      width: fit-content;
+    }
+  </style>
 </head>
 
 <body>
-  This is the client website.
+  <p>This is the client website.</p>
+  <h1>Heading of client website in Red color</h1>
 </body>
 
 </html>
