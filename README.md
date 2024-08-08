@@ -51,3 +51,7 @@ Use this file to add any additional configuration for the embedded app.
   };
 </script>
 ```
+
+## View the embedded app on client website
+
+Open the client website on [http://localhost:4000](http://localhost:4000) to view the embedded app.
