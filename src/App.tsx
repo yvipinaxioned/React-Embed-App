@@ -9,7 +9,6 @@ interface AppProps {
 }
 
 const App: React.FC<AppProps> = ({ config }) => {
-  console.log('from react app');
   return (
     <div className="bg-gray-100">
       <div className="container mx-auto p-4 bg-white shadow-lg rounded">
