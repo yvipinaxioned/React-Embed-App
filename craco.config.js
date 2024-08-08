@@ -1,19 +1,31 @@
-const path = require('path');
+const webpack = require("webpack");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   webpack: {
-    configure: (webpackConfig, { env, paths }) => {
+    plugins: {
+      add: [
+        new webpack.optimize.LimitChunkCountPlugin({
+          maxChunks: 1,
+        }),
+      ],
+      skipEnvChecks: true,
+    },
+    configure: (webpackConfig, { env }) => {
       if (env === 'production') {
-        // Disable filename hashing
+        // Disable filename hashing for JS
         webpackConfig.output.filename = 'static/js/[name].js';
-        webpackConfig.output.chunkFilename = 'static/js/[name].chunk.js';
+        webpackConfig.output.chunkFilename = 'static/js/[name].js';
 
-        // Disable hashing in CSS files
-        webpackConfig.plugins.forEach(plugin => {
-          if (plugin.constructor.name === 'MiniCssExtractPlugin') {
-            plugin.options.filename = 'static/css/[name].css';
-            plugin.options.chunkFilename = 'static/css/[name].chunk.css';
+        // Disable filename hashing for CSS
+        webpackConfig.plugins = webpackConfig.plugins.map(plugin => {
+          if (plugin instanceof MiniCssExtractPlugin) {
+            return new MiniCssExtractPlugin({
+              filename: 'static/css/[name].css',
+              chunkFilename: 'static/css/[name].css',
+            });
           }
+          return plugin;
         });
 
         // Disable source maps

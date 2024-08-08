@@ -5,7 +5,7 @@
   // Create a link element for the CSS
   var link = document.createElement('link');
   link.rel = 'stylesheet';
-  link.href = 'http://localhost:3000/static/css/main.e6c13ad2.css';
+  link.href = 'http://localhost:3000/static/css/main.css';
   document.head.appendChild(link);
 
   // Ensure the root element exists
@@ -18,7 +18,7 @@
 
   // Create a script element for the JS
   var script = document.createElement('script');
-  script.src = 'http://localhost:3000/static/js/main.18d4ba77.js';
+  script.src = 'http://localhost:3000/static/js/main.js';
   script.onload = function() {
     // Inject the config into the React app
     if (window.EMBEDDED_APP_INIT) {
