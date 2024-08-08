@@ -1,20 +1,26 @@
-<!-- your-site.html -->
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>hello world</title>
+  <title>Client Website</title>
+
+  <!-- client setting the KIONI_APP_CONFIG -->
   <script>
-    window.EMBEDDED_APP_CONFIG = {
-      clientId: 'selenite',
-      token: 'testing@123'
+    window.KIONI_APP_CONFIG = {
+      clientId: '1234',
+      token: '5678',
     };
   </script>
+
+  <!-- Load the kioni app script.js file -->
   <script defer src="script.js"></script>
+
 </head>
+
 <body>
-  hello there
+  This is the client website.
 </body>
+
 </html>

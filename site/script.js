@@ -1,6 +1,6 @@
 (function() {
   // Ensure the global configuration variables are set
-  var config = window.EMBEDDED_APP_CONFIG || {};
+  var config = window.KIONI_APP_CONFIG || {};
 
   // Create a link element for the CSS
   var link = document.createElement('link');

@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 // Read the configuration from the global variable
 // @ts-ignore
-const config = window.EMBEDDED_APP_CONFIG || {};
+const config = window.KIONI_APP_CONFIG || {};
 
 // Initialize the root element
 const rootElement = document.getElementById('kioni-react-root');
